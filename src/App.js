@@ -1,5 +1,5 @@
 
-//import './App.css';
+import './App.scss';
 
 import {  RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import Home from './Pages/Home/Home';
