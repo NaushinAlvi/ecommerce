@@ -7,8 +7,8 @@ const FeaturedProducts = ({type}) => {
   const data = [
     {
       id: 1,
-      img: "./images/i3.jpg",
-      img2: "./images/i4.jpg",
+      img: "/images/i3.jpg",
+      img2: "/images/i4.jpg",
       title: "Long sleeve graphic t-shirt",
       isNew:true,
       oldPrice: 19,
@@ -16,8 +16,8 @@ const FeaturedProducts = ({type}) => {
     },
     {
       id: 2,
-      img: "./images/i5.jpg",
-      img2: "./images/i6.jpg",
+      img: "/images/i5.jpg",
+      img2: "/images/i6.jpg",
       title: "Shirt",
       isNew:true,
       oldPrice: 19,
@@ -25,8 +25,8 @@ const FeaturedProducts = ({type}) => {
     },
     {
       id: 3,
-      img: "./images/i7.jpg",
-      img2: "./images/i8.jpg",
+      img: "/images/i7.jpg",
+      img2: "/images/i8.jpg",
       title: "Hat",
       isNew:true,
       oldPrice: 19,
@@ -34,8 +34,8 @@ const FeaturedProducts = ({type}) => {
     },
     {
       id: 4,
-      img: "./images/i9.jpg",
-      img2: "./images/NEUTRAL.jpg",
+      img: "/images/i9.jpg",
+      img2: "/images/NEUTRAL.jpg",
       title: "Coat",
       isNew:true,
       oldPrice: 19,
@@ -48,6 +48,8 @@ const FeaturedProducts = ({type}) => {
     <div className="featuredProducts">
     <div className="top">
       <h1>{type} products</h1>
+      <p>Lorem ipsum dolor sit, amet 
+        consectetur adipisicing elit. </p>
       
     </div>
     <div className="bottom">
