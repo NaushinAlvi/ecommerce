@@ -1,8 +1,9 @@
 import React from 'react'
 import "./FeaturedProducts.scss"
-import Card from "../Card/Card";
+import Card from '../../Components/Card/Card';
 
-const FeaturedProducts = ({type}) => {
+
+const FeaturedProducts = ({ type }) => {
 
   const data = [
     {
@@ -10,7 +11,7 @@ const FeaturedProducts = ({type}) => {
       img: "/images/i3.jpg",
       img2: "/images/i4.jpg",
       title: "Long sleeve graphic t-shirt",
-      isNew:true,
+      isNew: true,
       oldPrice: 19,
       price: 12,
     },
@@ -19,7 +20,7 @@ const FeaturedProducts = ({type}) => {
       img: "/images/i5.jpg",
       img2: "/images/i6.jpg",
       title: "Shirt",
-      isNew:true,
+      isNew: true,
       oldPrice: 19,
       price: 12,
     },
@@ -28,7 +29,7 @@ const FeaturedProducts = ({type}) => {
       img: "/images/i7.jpg",
       img2: "/images/i8.jpg",
       title: "Hat",
-      isNew:true,
+      isNew: true,
       oldPrice: 19,
       price: 12,
     },
@@ -37,7 +38,7 @@ const FeaturedProducts = ({type}) => {
       img: "/images/i9.jpg",
       img2: "/images/NEUTRAL.jpg",
       title: "Coat",
-      isNew:true,
+      isNew: true,
       oldPrice: 19,
       price: 12,
     },
@@ -46,19 +47,18 @@ const FeaturedProducts = ({type}) => {
 
   return (
     <div className="featuredProducts">
-    <div className="top">
-      <h1>{type} products</h1>
-      <p>Lorem ipsum dolor sit, amet 
-        consectetur adipisicing elit. </p>
-      
-    </div>
-    <div className="bottom">
-    
-        {data.map( item=>(
-          <Card item={item} key={item.id}/>
+      <div className="top">
+        <h1>{type} products</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        
+      </div>
+      <div className="bottom">
+
+        {data.map(item => (
+          <Card item={item} key={item.id} />
         ))}
+      </div>
     </div>
-  </div>
   );
 };
 

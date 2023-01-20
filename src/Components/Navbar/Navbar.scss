@@ -1,5 +1,6 @@
 .navbar {
     height: 80px;
+    background-color:rgb(2, 46, 39) ;
   
     .wrapper {
       padding: 10px 30px;
@@ -11,6 +12,7 @@
         display: flex;
         align-items: center;
         font-size: 18px;
+        color: rgb(253, 219, 174);
       }
   
       .left {
@@ -21,7 +23,7 @@
         .icon {
           display: flex;
           gap: 15px;
-          color: #777;
+          color: rgb(253, 219, 174);
           cursor: pointer;
           .cartIcon {
             position: relative;
@@ -34,6 +36,7 @@
        
         font-size: 30px;
         letter-spacing: 2px;
+        color: rgb(253, 219, 174);
        
       }
       .right {
@@ -45,7 +48,7 @@
         .icons {
           display: flex;
           gap: 15px;
-          color: #777;
+          color: rgb(253, 219, 174);
           cursor: pointer;
   
           .cartIcon {
