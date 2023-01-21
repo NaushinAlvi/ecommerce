@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import Cart from "../Cart/Cart";
+import Login from "../Login/Login";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
@@ -14,7 +15,7 @@ const Navbar = () => {
 	<div className="navbar">
 	<div className="wrapper">
 	  <div className="left">
-	  <div className="icon">
+	  <div className="icon" onClick={()=>setOpen(!open)}>
 	  <PersonOutlineOutlinedIcon/>
 	  <div className="searchIcon">
 	  <SearchIcon/>
@@ -60,6 +61,7 @@ const Navbar = () => {
 	  </div>
 	</div>
 	{open && <Cart/>}
+	{open && <Login/>}
   </div>
 
   );
